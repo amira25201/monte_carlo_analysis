@@ -1,0 +1,10 @@
+# Pinned to the versions the committed figures and results were produced with
+# (Python 3.14). Newer versions will probably work but are not tested.
+numpy==2.5.3
+pandas==3.0.5
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+seaborn==0.13.2
+joblib==1.6.0
+tqdm==4.70.1
