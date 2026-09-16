@@ -12,10 +12,6 @@ importance on the held-out set; a bounded random search over four features a
 learner could actually change, starting from a population-typical learner.
 
 ## Running it
-
-The data is not in this repository and must not be added; see
-[`data/README.md`](data/README.md) for why and for the expected columns.
-
 ```bash
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
