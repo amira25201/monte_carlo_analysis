@@ -12,6 +12,12 @@ importance on the held-out set; a bounded random search over four features a
 learner could actually change, starting from a population-typical learner.
 
 ## Running it
+
+The analysis was run on real data from 203 adult learners of English as a
+second language. That dataset is not in this repository. The tests run
+entirely on synthetic data generated within the test suite itself, so no
+real data is needed to run them.
+
 ```bash
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
@@ -34,7 +40,8 @@ pip install -r requirements-dev.txt
 python -m pytest
 ```
 
-Eleven tests on synthetic data check that targets, identifiers, outcome
+Eleven tests on synthetic data (generated within the test suite, not from
+the real dataset) check that targets, identifiers, outcome
 measures and quality flags never reach the predictor matrix; that the
 pronunciation model cannot fit a noise target once the sub-scores are gone;
 that every pipeline owns its own preprocessor; that bootstrap predictions are
